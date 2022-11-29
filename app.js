@@ -1,4 +1,5 @@
 const express = require('express')
+const ephbs = require('express-handlebars')
 const mongoose = require('mongoose')
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
@@ -16,9 +17,11 @@ db.once('open', () => {
 })
 
 const app = express()
+app.engine('handlebars', ephbs.engine({ defaultLayout: "main" }))
+app.set('view engine', 'handlebars')
 
 app.get('/', (req, res) => {
-  res.send('This is a login web page ')
+  res.render('index')
 })
 
 app.listen(PORT, () => {
