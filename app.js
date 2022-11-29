@@ -21,7 +21,7 @@ app.engine('handlebars', ephbs.engine({ defaultLayout: "main" }))
 app.set('view engine', 'handlebars')
 
 app.get('/', (req, res) => {
-  res.render('index')
+  res.render('login')
 })
 
 app.listen(PORT, () => {
