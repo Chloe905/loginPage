@@ -16,12 +16,13 @@
   <form style="max-width:500px;" class="text-center" method="post" action="/">
     <div class="mb-4">
       <input name="inputEmail" type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
-        placeholder="Email">
+        placeholder="Email" value="{{ email }}">
     </div>
     <div class="mb-5">
-      <input name="inputPassword" type="password" class="form-control" id="inputPassword" placeholder="Password">
+      <input name="inputPassword" type="password" class="form-control" id="inputPassword" placeholder="Password"
+        value="{{ password }}">
     </div>
-
+    <p class='text-danger'>{{errMessage}}</p>
     <button type="submit" class="btn btn-outline-dark btn-sm py-1 px-3 "
       style="box-shadow:0px 2px 5px 0px rgba(0,0,0,0.75) ;">Sign in</button>
 
