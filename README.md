@@ -17,9 +17,9 @@ Password: iamironman
 
 
 ### 功能列表
-- 可以在登入頁面輸入帳號密碼登入
-- 若帳號或密碼有誤，跳回登入頁面
-- 成功登入，進入Welcome頁面
+- 可以在登入頁面輸入帳號密碼登入。
+- 若帳號或密碼有誤，跳回登入頁面，警示輸入錯誤，並顯示上次輸入帳號密碼。
+- 成功登入，進入Welcome頁面，保持登入狀態。
 
 ### Getting start
 ***
@@ -76,7 +76,7 @@ Password: iamironman
 * [mongoDB](https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_apac-tw_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624371&adgroup=115749712503&gclid=CjwKCAiAjs2bBhACEiwALTBWZcUKpTcWMYz-H2ujR3AWXk8bd7bfPB458D5WrtfmwolB5WWeWjP3zRoC7BwQAvD_BwE)
 * [mongoose](https://mongoosejs.com/) 6.7.2
 * [dotenv](https://www.npmjs.com/package/dotenv) 16.0.3
-
+* [express-session](https://www.npmjs.com/package/express-session) v1.17.3
 #### Contributor - 專案開發人員
 ---
 [Chloe905](https://github.com/Chloe905)
